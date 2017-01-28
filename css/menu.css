@@ -1,0 +1,28 @@
+
+body
+{
+    background: #323A46;
+    font-family: Arial;
+}
+
+.menu
+{
+    list-style: none;
+    line-height: 42px;
+    margin: 2em auto;
+    outline: 1px solid red;
+    padding-left: 0;
+    width:15em;
+}
+
+.menu a
+{
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu li
+{
+    outline:1px solid green;
+}
