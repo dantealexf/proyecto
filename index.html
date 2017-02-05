@@ -30,13 +30,51 @@ nav {width: 100%;height: 50px;background: #4dbbbb;position: relative;z-index: 50
 .statics
 {
  text-align: left;
-      margin: 20px;
-  width: 200px;
- 
-  position: relative;
-  padding: 0 30px 0 0 ;
+ margin: 20px auto;
+ width: 200px;
+ position: relative;
 }
-h3{    font-size: 10pt;}
+h3
+{
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+.boton_usuario
+{
+	cursor: pointer;
+
+}
+.data_user
+{
+position: relative;
+width: 300px;
+height: 100%;
+z-index: 3;
+left: -100%;
+bottom: 160px;
+text-align: center;
+}
+
+.info_user
+{
+	position: relative;
+	/* top: 173px; */
+	width: 300px;
+	height: 100%;
+	z-index: 3;
+	left: 0%;
+}
+
+.boton_usuario:hover
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+
+.progressbar-text {font-size:10px !important;}
 
 @media screen and (max-width: 1000px) {
 	.menue {display: block}
@@ -60,31 +98,37 @@ h3{    font-size: 10pt;}
 		<div class="top_space"></div>
 		<div class="top_col_left">
 			<div class="foto_user"></div>
-			<div class="text_name">Leonardo Rivera</div>
-			<div class="statics">			    
-				<div id="barra_1">
-				    <h3>Item</h3>
-				</div>
-				<div id="barra_2">
-				    <h3>Item</h3>
-				</div>
-				<div id="barra_3">
-				    <h3>Item</h3>
-				</div>
-				<div id="barra_4">
-				    <h3>Item</h3>
-				</div>
-				
-				
+			<div class="text_name">
+				<div class="boton_usuario transition05">Leonardo Rivera</div>
 			</div>
-		</div>
-		<div class="tag_left">
+			<div class="info_user transition1" >
+				<div class="statics">
+					<div id="barra_1">
+							<h3>Item</h3>
+					</div>
+					<div id="barra_2">
+							<h3>Item</h3>
+					</div>
+					<div id="barra_3">
+							<h3>Item</h3>
+					</div>
+					<div id="barra_4">
+							<h3>Item</h3>
+					</div>
 
-		</div>
-		<div class="tools_left">
 
-		</div>
+				</div>
+			</div>
+			<div class="data_user transition1">
+				<p>Funciono</p>
+			</div>
+			<div class="tag_left">
 
+			</div>
+			<div class="tools_left">
+
+			</div>
+			</div>
 		</div>
 		<div class="col_center">
 			<div class="top_space"></div>
@@ -98,23 +142,23 @@ h3{    font-size: 10pt;}
         var i;
         var text;
         for(i=1;i<=4;i++){
-         text = "barra_" + i; 
+         text = "barra_" + i;
         var bar = new ProgressBar.Line(document.getElementById(text), {
-      strokeWidth: 4,
+      strokeWidth: 1,
       easing: 'easeInOut',
       duration: 1400,
       color: '#FFEA82',
       trailColor: '#eee',
       trailWidth: 1,
-      svgStyle: {width: '100%', height: '100%',position: 'relative',bottom: '9px'},
+      svgStyle: {width: '100%', height: '100%',position: 'relative',bottom: '15px'},
       text: {
         style: {
           // Text color.
           // Default: same as stroke color (options.color)
           color: '#342d2d',
           position: 'relative',
-          left: '158px', 
-          bottom: '37px', 
+          left: '158px',
+          bottom: '34px',
           padding: 0,
           margin: 0,
           height:0,
@@ -130,11 +174,11 @@ h3{    font-size: 10pt;}
       }
     });
 
-    bar.animate(1.0);  // Number from 0.0 to 1.0 
+    bar.animate(1.0);  // Number from 0.0 to 1.0
     }
          });
-    
-    
+
+
 
 
 $(".menue").on("click", function() {
@@ -144,6 +188,17 @@ $(".menue").on("click", function() {
 	}, function(){
 		$(".col_left").css("left","-100%");
 		$(".col_center").css("padding-left","0px");
+	})
+});
+
+$(".boton_usuario").on("click", function() {
+  $(this).toggleFn(function(){
+			$(".data_user").css("left","0%");
+		$(".info_user").css("left","-100%");
+
+	}, function(){
+			$(".data_user").css("left","-100%");
+			$(".info_user").css("left","0%");
 	})
 });
 
