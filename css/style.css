@@ -3,7 +3,7 @@
 		nav {width: 100%;height: 50px;background: #4dbbbb;position: relative;z-index: 50}
 		.container {position: absolute;width: 100%;height: 100%;top: 0;overflow: hidden;}
 		.col_center {position: absolute;width: 100%;height: 100%;top: 0;padding-left: 300px;box-sizing: border-box;background: #e4e4e4;}
-		.col_left {background: #17adcd;position: absolute;top: 0;width: 300px;height: 100%;z-index: 3;left:0%;}
+		.col_left {background: #ffffff;position: absolute;top: 0;width: 300px;height: 100%;z-index: 3;left:0%;}
 		.col_right {background: white;position: absolute; float:right;top: 0;width: 300px;height: 100%;z-index:3;right: -100%;}
 		.logo {background: url(../img/logo.png);background-size: cover;height: 50px;width: 80px;background-position: center;float: left;}
 		.right_icons {float: right;margin-right: 10px;}
@@ -19,12 +19,14 @@
 		.statics{text-align: left;margin: 20px auto;width: 200px;position: relative;}
 		h3{font-size: 10px;margin-bottom: 3px;}
        .boton_usuario{cursor: pointer;font-size: 13px;}
-	   .data_user{position: relative;width: 300px;height: 100%;z-index: 3;left: -100%;bottom: 240px;text-align: left;margin: auto 20px;line-height: 30px;color: white;}
+	   .data_user{position: absolute;width: 300px;height: 139px;z-index: 3;left: -100%;font-size: 14px;top: 215px;text-align: left;padding: 5px 20px;line-height: 30px;color: #666;box-sizing: border-box;}
+	   .data_user i {margin-right: 10px;}
 	   .info_user{position: relative;width: 300px;height: 100%;z-index: 3;left: 0%;}
 	   .boton_usuario:hover{transform: scale(1.02);font-weight: bold;}
-	   .status_user{text-align: center;background: #0676f4;padding: 20px;color: white;}
-	   .tools_left{background: #06f4b4;margin: -120px auto;text-align: center;padding: 10px;cursor: pointer;font-size: 20px;}
-	   .statics h3{color: white;}.btn{background: #2192e4;border-radius: 20px;transform-style: preserve-3d;margin: 10px auto;}
-	   .btn:after{top: -100%;left: 0px;width: 100%;position: absolute;background: #3a9999;border-radius: 20px;content: 'Listen'; transform-origin: left bottom;transform: rotateX(90deg);}
+	   .status_user{text-align: center;background: #bb5c4d;padding: 10px;color: white;cursor: pointer;}
+	   .tools_left{background: #fff;text-align: center;padding: 10px;cursor: pointer;font-size: 20px;}
+	   .statics h3{color: #969696;}
+	   .btn{    background: #1c79be;border-radius: 5px;transform-style: preserve-3d;padding: 10px;color: white;font-size: 15px;height: 100%;width: 100%;box-sizing: border-box;}
+	   .btn:after{top: -100%;left: 0px;width: 100%;height: 100%;position: absolute;background: #bb5c4d;border-radius: 5px;line-height: 38px;content: 'Listen';transform-origin: left bottom;transform: rotateX(90deg);}
 	   .btn:hover{transform-origin: center bottom;transform: rotateX(-90deg) translateY(100%);}
 	   .progressbar-text {font-size:10px !important;}

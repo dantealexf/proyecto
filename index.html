@@ -16,6 +16,7 @@
 		.col_left {left:-100%;}
 		.col_center {padding-left: 0;}
 		}
+		.btn_box {float: left;width: 50%;padding: 5px;box-sizing: border-box;}
 		</style>
 </head>
 <body>
@@ -53,7 +54,7 @@
 			</div>
 			
 			<div class="status_user transition1">
-				<h2>Beginner</h2>
+				Beginner
 			</div>
 			<div class="data_user transition1">
 				<i class="fa fa-phone" ></i> (+57) xxx - xxxx -xxx<br>
@@ -64,17 +65,25 @@
 			<div class="tag_left">
 			</div>
 			<div class="tools_left">
+				<div class="btn_box">
 				<div id="listen" class="btn transition02">
 					<i class="fa fa-headphones" aria-hidden="true"></i>
 				</div>
+				</div>
+				<div class="btn_box">
 				<div id="speak" class="btn transition02">
 					<i class="fa fa-microphone fa-lg" aria-hidden="true"></i>
 				</div>
+				</div>
+				<div class="btn_box">
 				<div id="tip" class="btn transition02">
 					<i class="fa fa-info" aria-hidden="true"></i>
 				</div>
+				</div>
+				<div class="btn_box">
 				<div id="vocabulary" class="btn transition02">
 					<i class="fa fa-book" aria-hidden="true"></i>
+				</div>
 				</div>
 			</div>
 		</div>
@@ -133,6 +142,9 @@
 				<div class="coment">
 					<div id="coment_text">
 						<div class="coment_content">
+							<div class="foto_user_mini">
+								
+							</div>
 							<span id="coment_users_nombre">Users</span>
 							<span id="coment_date">
 								<script type="text/javascript">
@@ -141,7 +153,10 @@
 								</script>
 							</span>
 							<div class="text">
-								
+								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+							</div>
+							<div class="coment_like">
+								este es el like
 							</div>
 						</div>
 					</div>
@@ -238,7 +253,7 @@ var text;
 			style: {
 			// Text color.
 			// Default: same as stroke color (options.color)
-			color: '#fff',
+			color: '#969696',
 			position: 'relative',
 			left: '158px',
 			bottom: '34px',
@@ -256,7 +271,8 @@ var text;
 			bar.path.setAttribute('stroke', state.color);
 			}
 		});
-			bar.animate(1.0);  // Number from 0.0 to 1.0
+		var ran = (Math.random() * (1 - 0.1) + 0.1).toFixed(2);
+			bar.animate(ran);  // Number from 0.0 to 1.0
 	}
 });/*fin del ready*/
 $(".menue").on("click", function() {
@@ -296,19 +312,22 @@ toggleFn: jQuery.fn.toggleFn
 }(jQuery));
 /*------------button float----------------------*/
 $(".container").mouseup(function (e){
-// console.log("mouseup");
-// e.preventDefault();
 var contenedor = $(".col_right");
+var data = contenedor.data("status");
+if(data=="0"){
 	if (!contenedor.is(e.target) && contenedor.has(e.target).length === 0){
-		$(".col_right").css("right","-100%");
+		$("#button_float").click();
 		$("#button_float").show();
+	}
 }
 });
 $("#button_float").on("click", function() {
 $(this).toggleFn(function(){
 		$(".col_right").css("right","0%");
+		$(".col_right").data("status","0");
 	}, function(){
 		$(".col_right").css("right","-100%");
+		$(".col_right").data("status","1");
 	})
 });
 //-------------Controls-----------------
