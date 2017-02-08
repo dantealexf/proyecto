@@ -13,7 +13,7 @@
 		nav {width: 100%;height: 50px;background: #4dbbbb;position: relative;z-index: 50}
 		.container {position: absolute;width: 100%;height: 100%;top: 0;overflow: hidden;}
 		.col_center {position: absolute;width: 100%;height: 100%;top: 0;padding-left: 300px;box-sizing: border-box;background: #e4e4e4;}
-		.col_left {background: white;position: absolute;top: 0;width: 300px;height: 100%;z-index: 3;left:0%;}
+		.col_left {background: #17adcd;position: absolute;top: 0;width: 300px;height: 100%;z-index: 3;left:0%;}
 		.col_right {background: white;position: absolute; float:right;top: 0;width: 300px;height: 100%;z-index:3;right: -100%;}
 		.logo {background: url(img/logo.png);background-size: cover;height: 50px;width: 80px;background-position: center;float: left;}
 		.right_icons {float: right;margin-right: 10px;}
@@ -21,17 +21,105 @@
 		.right_icons div:hover {color: #424242;}
 		.transition1 { transition: all 1s; }
 		.transition05 { transition: all .5s; }
+		.transition02 { transition: all .2s; }
 		.top_space {width: 100%;height: 50px;}
 		.foto_user {margin: 0 auto;background: url(img/avatar.jpg);height: 100px;width: 100px;background-size: cover;margin-top: 15px;border-radius: 50%;}
 		.text_name {text-align: center;margin-top: 10px;}
 		.menue {float: left;display: none;font-size: 25px;height: 50px;line-height: 50px;padding: 0 10px;color: white;cursor: pointer;}
-		.statics{ text-align: left; margin: 20px auto; width: 200px; position: relative;}
-					h3{	font-size: 10px;	margin-bottom: 3px;}
-		.boton_usuario{cursor: pointer;font-size: 13px;}
-		.data_user{position: relative;width: 300px;height: 100%;z-index: 3;left: -100%;bottom: 160px;text-align: center;}
-											.info_user{	position: relative;	width: 300px;	height: 100%;	z-index: 3;	left: 0%;}
-		.boton_usuario:hover{transform: scale(1.02);font-weight: bold;}
+		.statics
+{
+ text-align: left;
+ margin: 20px auto;
+ width: 200px;
+ position: relative;
+}
+h3
+{
+	font-size: 10px;
+	margin-bottom: 3px;
+}
+
+.boton_usuario{cursor: pointer;font-size: 13px;}
+.data_user
+{
+position: relative;
+width: 300px;
+height: 100%;
+z-index: 3;
+left: -100%;
+bottom: 240px;
+text-align: left;
+margin: auto 20px;
+line-height: 30px;
+color: white;
+}
+
+.info_user
+{
+	position: relative;
+	width: 300px;
+	height: 100%;
+	z-index: 3;
+	left: 0%;
+}
+
+.boton_usuario:hover{transform: scale(1.02);font-weight: bold;}
+
+.status_user
+{
+	text-align: center;
+    background: #0676f4;
+    padding: 20px;
+    color: white;
+}
+
+.tools_left
+{
+	background: #06f4b4;
+	margin: -120px auto;
+    text-align: center;
+	padding: 10px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.statics h3
+{
+	color: white;
+}
+
+.btn
+{
+	background: #2192e4;
+	border-radius: 20px;
+	transform-style: preserve-3d;
+	margin: 10px auto;
+}
+
+.btn:after
+{
+ 
+ top: -100%;
+ left: 0px;
+ width: 100%;
+ position: absolute;
+ background: #3a9999;
+ border-radius: 20px;
+ content: 'Listen';
+ transform-origin: left bottom;
+ transform: rotateX(90deg);
+}
+
+.btn:hover
+{
+ transform-origin: center bottom;
+ transform: rotateX(-90deg) translateY(100%);
+
+}
 		.progressbar-text {font-size:10px !important;}
+
+
+
 		/*--------------button float----------------*/
 		#button_float{width: 55px;height: 55px;background: #2555b1;position: fixed;bottom: 10px;right: 10px;cursor: pointer;outline: none;-webkit-border-radius: 30px;
 		-moz-border-radius: 30px;border-radius: 30px;border-color: #f6f7f9;/*border: none;*/}
@@ -89,51 +177,87 @@
 		}
 		</style>
 	</head>
-	<body>
-		<nav>
-			<div class="logo"></div>
-			<div class="menue"><i class="fa fa-bars" aria-hidden="true"></i></div>
-			<div class="right_icons">
-				<div class="transition05"> <i class="fa fa-cog" aria-hidden="true"></i> </div>
-				<div class="transition05"> <i class="fa fa-question" aria-hidden="true"></i> </div>
-			</div>
-		</nav>
+<body>
+<nav>
+	<div class="logo"></div>
+	<div class="menue"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	<div class="right_icons">
+		<div class="transition05"> <i class="fa fa-cog" aria-hidden="true"></i> </div>
+		<div class="transition05"> <i class="fa fa-question" aria-hidden="true"></i> </div>
+	</div>
+</nav>
 		<div class="container">
 			<div class="col_left transition05">
 				<div class="top_space"></div>
 				<div class="top_col_left">
-					<div class="foto_user"></div>
-					<div class="text_name">
-						<div class="boton_usuario transition05">Leonardo Rivera</div>
-					</div>
-					<div class="info_user transition1" >
-						<div class="statics">
-							<div id="barra_1">
-								<h3>Item</h3>
-							</div>
-							<div id="barra_2">
-								<h3>Item</h3>
-							</div>
-							<div id="barra_3">
-								<h3>Item</h3>
-							</div>
-							<div id="barra_4">
-								<h3>Item</h3>
+						<div class="foto_user"></div>
+						<div class="text_name">
+							<div class="boton_usuario transition05">Leonardo Rivera</div>
+						</div>
+						<div class="info_user transition1" >
+							<div class="statics">
+								<div id="barra_1">
+									<h3>Item</h3>
+								</div>
+								<div id="barra_2">
+									<h3>Item</h3>
+								</div>
+								<div id="barra_3">
+									<h3>Item</h3>
+								</div>
+								<div id="barra_4">
+									<h3>Item</h3>
+								</div>
 							</div>
 						</div>
+					
+					<div class="status_user transition1">
+						<h2>Beginner</h2>
 					</div>
 					<div class="data_user transition1">
-						<p>Información del usuario</p>
+						<i class="fa fa-phone" ></i> (+57) xxx - xxxx -xxx<br>
+						<i class="fa fa-envelope" aria-hidden="true"></i> user@email.com<br>
+						<i class="fa fa-birthday-cake" aria-hidden="true"> </i> DD / MM / YYYY <br>
+						<i class="fa fa-globe" aria-hidden="true"></i> City	<br>
 					</div>
 					<div class="tag_left">
+
 					</div>
 					<div class="tools_left">
+						<div id="listen" class="btn transition02">
+							<i class="fa fa-headphones" aria-hidden="true"></i>
+						</div>
+						<div id="speak" class="btn transition02">
+							<i class="fa fa-microphone fa-lg" aria-hidden="true"></i>
+						</div>
+						<div id="tip" class="btn transition02">
+							<i class="fa fa-info" aria-hidden="true"></i>
+						</div>
+						<div id="vocabulary" class="btn transition02">
+							<i class="fa fa-book" aria-hidden="true"></i>
+						</div>
 					</div>
 				</div>
 			</div>
+
 			<div class="col_center">
 				<div class="top_space"></div>
-				<h1>Centro</h1>
+				 <div class="contenido-4">
+				 	<div id="modulo_1" class="container_mod">
+				 		<div class="mod_img">
+				 			
+				 		</div>
+				 		<div class="mod_title">
+				 			
+				 		</div>
+				 		<div class="mod_description">
+				 			
+				 		</div>
+				 	</div>
+				 	<div id="modulo_2"></div>
+				 	<div id="modulo_3"></div>
+				 	<div id="modulo_4"></div>
+				 </div>
 			</div>
 			<div class="col_right transition05">
 				<div class="top_space"></div>
@@ -252,7 +376,6 @@
 					
 				</div>
 			</div>
-		</div>
 	</div>
 	<div id="button_float">
 		<i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
@@ -276,7 +399,7 @@
 				style: {
 				// Text color.
 				// Default: same as stroke color (options.color)
-				color: '#342d2d',
+				color: '#fff',
 				position: 'relative',
 				left: '158px',
 				bottom: '34px',
@@ -308,6 +431,7 @@
 	});
 	$(".boton_usuario").on("click", function() {
 	$(this).toggleFn(function(){
+
 			$(".data_user").css("left","0%");
 			$(".info_user").css("left","-100%");
 		}, function(){
@@ -315,6 +439,7 @@
 			$(".info_user").css("left","0%");
 		})
 	});
+
 	(function($) {
 	jQuery.fn.extend({
 	toggleFn: function(fn1, fn2) {
@@ -332,6 +457,7 @@
 	toggleFn: jQuery.fn.toggleFn
 	});
 	}(jQuery));
+
 	/*------------button float----------------------*/
 	$(".container").mouseup(function (e){
 	// console.log("mouseup");
