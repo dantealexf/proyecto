@@ -95,19 +95,38 @@
 	</div>
 	<div class="col_center">
 		<div class="top_space"></div>
-		<div class="contenido-4">
-			<div id="modulo_1" class="mod">
-				<div class="mod_img"></div>
-				<div class="mod_title">Animals</div>
-				<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
-				<div class="mod_description">
-					
+		<div class="container_box">
+			<div class="contenido-4">
+				<div id="modulo_1" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_5"></div>
 				</div>
-			</div>
-			<div id="modulo_2"></div>
-			<div id="modulo_3"></div>
-			<div id="modulo_4"></div>
-		</div>
+				<div id="modulo_2" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_6"></div>
+				</div>
+				<div id="modulo_3" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_7"></div>
+				</div>
+				<div id="modulo_4" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_8"></div>
+				</div>
+		    </div>
+		</div>		
 	</div>
 	<div class="col_right transition05">
 		<div class="top_space"></div>
@@ -241,7 +260,7 @@
 $(document).ready(function(){
 var i;
 var text;
-	for(i=1;i<=4;i++){
+	for(i=1;i<=8;i++){
 		text = "barra_" + i;
 		var bar = new ProgressBar.Line(document.getElementById(text),{
 		strokeWidth: 1,
