@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Platform Base | English E-Learning</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/col_center.css">
+		<link rel="stylesheet" href="css/col_right.css">		
+		<link rel="stylesheet" href="includes/font-awesome/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<style>
+
+
+
+
+
+		/*---------------------media-----------------------------*/
+		@media screen and (max-width: 1000px) {
+		.menue {display: block}
+		.col_left {left:-100%;}
+		.col_center {padding-left: 0;}
+		}
+		.btn_box {float: left;width: 50%;padding: 5px;box-sizing: border-box;}
+		</style>
+</head>
+<body>
+<nav>
+	<div class="logo"></div>
+	<div class="menue"><i class="fa fa-bars" aria-hidden="true"></i></div>
+	<div class="right_icons">
+		<div class="transition05"> <i class="fa fa-cog" aria-hidden="true"></i> </div>
+		<div class="transition05"> <i class="fa fa-question" aria-hidden="true"></i> </div>
+	</div>
+</nav>
+<div class="container">
+	<div class="col_left transition05">
+		<div class="top_space"></div>
+		<div class="top_col_left">
+			<div class="foto_user"></div>
+			<div class="text_name">
+				<div class="boton_usuario transition05">Leonardo Rivera</div>
+			</div>
+			<div class="info_user transition1" >
+				<div class="statics">
+					<div id="barra_1">
+						<h3>Item</h3>
+					</div>
+					<div id="barra_2">
+						<h3>Item</h3>
+					</div>
+					<div id="barra_3">
+						<h3>Item</h3>
+					</div>
+					<div id="barra_4">
+						<h3>Item</h3>
+					</div>
+				</div>
+			</div>
+			
+			<div class="status_user transition1">
+				Beginner
+			</div>
+			<div class="data_user transition1">
+				<i class="fa fa-phone" ></i> (+57) xxx - xxxx -xxx<br>
+				<i class="fa fa-envelope" aria-hidden="true"></i> user@email.com<br>
+				<i class="fa fa-birthday-cake" aria-hidden="true"> </i> DD / MM / YYYY <br>
+				<i class="fa fa-globe" aria-hidden="true"></i> City	<br>
+			</div>
+			<div class="tag_left">
+			</div>
+			<div class="tools_left">
+				<div class="btn_box">
+				<div id="listen" class="btn transition02">
+					<i class="fa fa-headphones" aria-hidden="true"></i>
+				</div>
+				</div>
+				<div class="btn_box">
+				<div id="speak" class="btn transition02">
+					<i class="fa fa-microphone fa-lg" aria-hidden="true"></i>
+				</div>
+				</div>
+				<div class="btn_box">
+				<div id="tip" class="btn transition02">
+					<i class="fa fa-info" aria-hidden="true"></i>
+				</div>
+				</div>
+				<div class="btn_box">
+				<div id="vocabulary" class="btn transition02">
+					<i class="fa fa-book" aria-hidden="true"></i>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col_center">
+		<div class="top_space"></div>
+		<div class="container_box">
+			<div class="contenido-4">
+				<div id="modulo_1" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_5"></div>
+				</div>
+				<div id="modulo_2" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_6"></div>
+				</div>
+				<div id="modulo_3" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_7"></div>
+				</div>
+				<div id="modulo_4" class="mod">
+					<div class="mod_img"></div>
+					<div class="mod_title">Animals</div>
+					<div class="mod_flotante transition02"><i class="fa fa-plus"></i></div>
+					<div class="mod_description"></div>
+					<div id="barra_8"></div>
+				</div>
+		    </div>
+		</div>		
+	</div>
+	<div class="col_right transition05">
+		<div class="top_space"></div>
+		<div class="question_form">
+			<form method="post" class="form" id="form">
+				<div class="container_form">
+					<textarea name="text_area" placeholder="Question..." maxlength="148" id="question_text" required></textarea>
+					<span id="caracter">148</span>
+					<span id="users_nombre">Users</span>
+					<span id="date">
+						<script type="text/javascript">
+						var f = new Date();
+						document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+						</script>
+					</span>
+					<div class="controls">
+						<div class="selector negrilla"  id="off"><i class="fa fa-bold" aria-hidden="true"></i></div>
+						<div class="selector cursiva"  id="off"><i class="fa fa-italic" aria-hidden="true"></i></div>
+						<div class="selector subrayado"  id="off"><i class="fa fa-underline" aria-hidden="true"></i></div>
+					</div>
+				</div>
+				<div class="container_send">
+					<input type="button"  id="send" value="Send" >
+				</div>
+			</form>
+			<div class="container_filter">
+				<ul class="filter">
+					<li id="filter_lastest" class="active_filter">Latest</li>
+					<li id="filter_tendences" >Tendences</li>
+					<li id="filter_search" >Search</li>
+				</ul>
+			</div>
+			<div class="container_coment">
+				<div class="coment">
+					<div id="coment_text">
+						<div class="coment_content">
+							<div class="foto_user_mini">
+								
+							</div>
+							<span id="coment_users_nombre">Users</span>
+							<span id="coment_date">
+								<script type="text/javascript">
+								var f = new Date();
+								document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+								</script>
+							</span>
+							<div class="text">
+								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.
+							</div>
+							<div class="coment_like">
+								este es el like
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coment">
+					<div id="coment_text">
+						<div class="coment_content">
+							<span id="coment_users_nombre">Users</span>
+							<span id="coment_date">
+								<script type="text/javascript">
+								var f = new Date();
+								document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+								</script>
+							</span>
+							<div class="text">
+								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industr
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coment">
+					<div id="coment_text">
+						<div class="coment_content">
+							<span id="coment_users_nombre">Users</span>
+							<span id="coment_date">
+								<script type="text/javascript">
+								var f = new Date();
+								document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+								</script>
+							</span>
+							<div class="text">
+								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industr
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coment">
+					<div id="coment_text">
+						<div class="coment_content">
+							<span id="coment_users_nombre">Users</span>
+							<span id="coment_date">
+								<script type="text/javascript">
+								var f = new Date();
+								document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+								</script>
+							</span>
+							<div class="text">
+								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industr
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="coment">
+					<div id="coment_text">
+						<div class="coment_content">
+							<span id="coment_users_nombre">Users</span>
+							<span id="coment_date">
+								<script type="text/javascript">
+								var f = new Date();
+								document.write(f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear());
+								</script>
+							</span>
+							<div class="text">
+								Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industr
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</div>
+</div>
+<div id="button_float">
+	<i class="fa fa-commenting fa-2x" aria-hidden="true"></i>
+</div>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script>
+$(document).ready(function(){
+var i;
+var text;
+	for(i=1;i<=8;i++){
+		text = "barra_" + i;
+		var bar = new ProgressBar.Line(document.getElementById(text),{
+		strokeWidth: 1,
+		easing: 'easeInOut',
+		duration: 1400,
+		color: '#FFEA82',
+		trailColor: '#eee',
+		trailWidth: 1,
+		svgStyle: {width: '100%', height: '100%',position: 'relative',bottom: '15px'},
+		text: {
+			style: {
+			// Text color.
+			// Default: same as stroke color (options.color)
+			color: '#969696',
+			position: 'relative',
+			left: '158px',
+			bottom: '34px',
+			padding: 0,
+			margin: 0,
+			height:0,
+			transform: null
+			},
+			autoStyleContainer: false
+			},
+			from: {color: '#0bcef2'},
+			to: {color: '#0bf33d'},
+			step: (state, bar) => {
+			bar.setText(Math.round(bar.value() * 100) + ' %'),bar.path.setAttribute('stroke', state.color),
+			bar.path.setAttribute('stroke', state.color);
+			}
+		});
+		var ran = (Math.random() * (1 - 0.1) + 0.1).toFixed(2);
+			bar.animate(ran);  // Number from 0.0 to 1.0
+	}
+});/*fin del ready*/
+$(".menue").on("click", function() {
+$(this).toggleFn(function(){
+		$(".col_left").css("left","0%");
+		$(".col_center").css("padding-left","300px");
+	}, function(){
+		$(".col_left").css("left","-100%");
+		$(".col_center").css("padding-left","0px");
+	})
+});
+$(".boton_usuario").on("click", function() {
+$(this).toggleFn(function(){
+		$(".data_user").css("left","0%");
+		$(".info_user").css("left","-100%");
+	}, function(){
+		$(".data_user").css("left","-100%");
+		$(".info_user").css("left","0%");
+	})
+});
+(function($) {
+jQuery.fn.extend({
+toggleFn: function(fn1, fn2) {
+$.fn.toggleFn.index = fn = $.fn.toggleFn.index || 0;
+try {
+arguments[fn].call(this);
+$.fn.toggleFn.index = !fn ? 1 : void 0;
+} catch (e) {
+console.log(e)
+};
+return this
+}
+});
+jQuery.extend({
+toggleFn: jQuery.fn.toggleFn
+});
+}(jQuery));
+/*------------button float----------------------*/
+$(".container").mouseup(function (e){
+var contenedor = $(".col_right");
+var data = contenedor.data("status");
+if(data=="0"){
+	if (!contenedor.is(e.target) && contenedor.has(e.target).length === 0){
+		$("#button_float").click();
+		$("#button_float").show();
+	}
+}
+});
+$("#button_float").on("click", function() {
+$(this).toggleFn(function(){
+		$(".col_right").css("right","0%");
+		$(".col_right").data("status","0");
+	}, function(){
+		$(".col_right").css("right","-100%");
+		$(".col_right").data("status","1");
+	})
+});
+//-------------Controls-----------------
+$('.selector').click(function() {
+var value_class = $(this).attr('class');
+var value = value_class.replace('selector', '');
+var clase=  $(this).attr('id');
+if(clase=="off"){
+	$('#question_text').addClass(value);
+	$(this).removeAttr("id");
+	$(this).attr("id","on");
+}else{
+	$('#question_text').removeClass(value);
+	$(this).removeAttr("id");
+	$(this).attr("id","off");
+}
+});
+
+//--------------Caracter-------------------
+$("#question_text").keyup(function(e){
+var limite = 148;
+var value1=$(this).val().length;
+var resta = limite - value1;
+if(value1 <= limite){
+	$('#caracter').html(resta);
+} else {
+	e.preventDefault();
+}
+});
+</script>
+<script src="includes/progressBar/dist/progressbar.min.js"></script>
+</body>
+</html>
